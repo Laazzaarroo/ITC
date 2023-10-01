@@ -4,16 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ITCModel extends Model
+class Products extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'itc';
+    protected $table            = 'products';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['name', 'age', 'gender'];
+    protected $allowedFields    = ['id', 'name', 'description', 'category_id', 'quantity', 'price'];
 
     // Dates
     protected $useTimestamps = false;
